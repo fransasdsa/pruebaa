@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/config-serve/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/ms-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-student-service/pom.xml" />
       </list>
     </option>
   </component>

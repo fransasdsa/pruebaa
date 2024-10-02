@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ms-user-service" />
         <module name="config-server" />
+        <module name="ms-student-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-serve" options="" />
       <module name="config-server" options="" />
+      <module name="ms-student-service" options="-parameters" />
       <module name="ms-user-service" options="" />
     </option>
   </component>

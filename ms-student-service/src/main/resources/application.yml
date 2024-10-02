@@ -1,0 +1,14 @@
+# src/main/resources/application.yml
+server:
+  port: 8082
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_student_service
+    username: root
+    password:
+
+logging:
+  level:
+    root: INFO
+    com.upu.msstudentservice: DEBUG
