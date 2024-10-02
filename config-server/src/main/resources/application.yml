@@ -8,6 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/fransasdsa/pruebaa.git
-          search-paths: "{application}"
+          searchPaths: config-data
+
   profiles:
     active: native
