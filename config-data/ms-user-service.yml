@@ -1,9 +1,11 @@
 # En el repositorio de configuración (e.g., C:/config-repo/ms-user-service.yml)
 spring:
+  application:
+    name: ms-user-service
   r2dbc:
     url: r2dbc:mysql://localhost:3306/ms_user_service
     username: root
-    password: password
+    password:
 
 logging:
   level:
