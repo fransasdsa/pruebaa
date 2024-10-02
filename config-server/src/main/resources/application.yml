@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/fransasdsa/pruebaa.git
-          # Si es un repositorio privado, agregar:
+          # Si es un repositorio privado, descomenta y agrega tu usuario y contraseña
           # username: su_usuario
           # password: su_contraseña
           clone-on-start: true
