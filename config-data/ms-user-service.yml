@@ -10,7 +10,7 @@ spring:
 logging:
   level:
     root: INFO
-    com.upu.msuserservice: DEBUG
+    com.upu.microservice: DEBUG
 eureka:
   client:
     serviceUrl:
