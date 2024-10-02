@@ -1,0 +1,14 @@
+# src/main/resources/application.yml
+server:
+  port: 8083
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_advisor_service
+    username: root
+    password:
+
+logging:
+  level:
+    root: INFO
+    com.upu.msadvisorservice: DEBUG

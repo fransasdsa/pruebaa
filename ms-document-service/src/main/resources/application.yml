@@ -1,0 +1,21 @@
+# src/main/resources/application.yml
+server:
+  port: 8089
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_document_service
+    username: root
+    password:
+
+  content:
+    fs:
+      filesystems:
+        default: filesystemStorage
+      filesystemStorage:
+        root: ./contentStore
+
+logging:
+  level:
+    root: INFO
+    com.upu.msdocumentservice: DEBUG

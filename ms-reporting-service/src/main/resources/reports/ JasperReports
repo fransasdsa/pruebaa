@@ -1,0 +1,12 @@
+@Autowired
+private WebClient.Builder webClientBuilder;
+
+private List<Object> fetchDataForReport(String reportName, Map<String, Object> params) {
+    return webClientBuilder.build()
+        .get()
+        .uri("http://ms-thesis-service/theses")
+        .retrieve()
+        .bodyToFlux(Object.class)
+        .collectList()
+        .block();
+}

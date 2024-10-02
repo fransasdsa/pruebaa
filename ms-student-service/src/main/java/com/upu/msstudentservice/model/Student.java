@@ -5,6 +5,7 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
@@ -12,9 +13,14 @@ import java.util.UUID;
 public class Student {
     @Id
     private UUID id;
-    private UUID userId;
-    private String enrollmentNumber;
-    private String program;
-    private String department;
-    private String status;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String identificationNumber; // Número de identificación (DNI, pasaporte, etc.)
+    private LocalDate dateOfBirth;
+    private String address;
+    private String phoneNumber;
+    private String program; // Programa académico en el que está inscrito
+    private LocalDate enrollmentDate; // Fecha de inscripción
+    private String status; // e.g., "Active", "Graduated", "Inactive"
 }

@@ -1,0 +1,24 @@
+# src/main/resources/application.yml
+server:
+  port: 8091
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_authorization_service
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/auth
+
+logging:
+  level:
+    root: INFO
+    com.upu.msauthorizationservice: DEBUG

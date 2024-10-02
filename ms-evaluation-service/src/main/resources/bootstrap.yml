@@ -1,0 +1,7 @@
+# src/main/resources/bootstrap.yml
+spring:
+  application:
+    name: ms-evaluation-service
+  cloud:
+    config:
+      uri: http://localhost:8888

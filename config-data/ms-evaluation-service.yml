@@ -1,0 +1,10 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_evaluation_service
+    username: root
+    password:
+
+logging:
+  level:
+    root: INFO
+    com.upu.msevaluationservice: DEBUG

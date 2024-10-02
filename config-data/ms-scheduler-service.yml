@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms-scheduler-service
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_scheduler_service
+    username: root
+    password:

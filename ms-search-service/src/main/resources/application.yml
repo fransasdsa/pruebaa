@@ -1,0 +1,28 @@
+spring:
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+      server:
+        port: 8094
+
+      spring:
+        elasticsearch:
+          rest:
+            uris: http://localhost:9200
+
+        cloud:
+          stream:
+            default-binder: kafka
+            bindings:
+              input:
+                destination: search-topic
+                group: search-group
+            kafka:
+              binder:
+                brokers: localhost:9092
+
+      logging:
+        level:
+          root: INFO
+          com.upu.mssearchservice: DEBUG
+

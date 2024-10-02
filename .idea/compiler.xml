@@ -7,9 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ms-user-service" />
+        <module name="ms-scheduler-service" />
+        <module name="ms-search-service" />
+        <module name="ms-authentication-service" />
+        <module name="ms-reporting-service" />
+        <module name="ms-payment-service" />
+        <module name="ms-analytics-service" />
+        <module name="ms-notification-service" />
         <module name="config-server" />
+        <module name="ms-research-line-service" />
+        <module name="ms-user-service" />
+        <module name="ms-authorization-service" />
+        <module name="ms-evaluation-service" />
+        <module name="ms-thesis-service" />
         <module name="ms-student-service" />
+        <module name="ms-document-service" />
+        <module name="ms-advisor-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,7 +33,20 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-serve" options="" />
       <module name="config-server" options="" />
-      <module name="ms-student-service" options="-parameters" />
+      <module name="ms-advisor-service" options="" />
+      <module name="ms-analytics-service" options="" />
+      <module name="ms-authentication-service" options="" />
+      <module name="ms-authorization-service" options="" />
+      <module name="ms-document-service" options="-parameters" />
+      <module name="ms-evaluation-service" options="" />
+      <module name="ms-notification-service" options="" />
+      <module name="ms-payment-service" options="" />
+      <module name="ms-reporting-service" options="-parameters" />
+      <module name="ms-research-line-service" options="" />
+      <module name="ms-scheduler-service" options="-parameters" />
+      <module name="ms-search-service" options="-parameters" />
+      <module name="ms-student-service" options="" />
+      <module name="ms-thesis-service" options="" />
       <module name="ms-user-service" options="" />
     </option>
   </component>

@@ -18,6 +18,7 @@ public class StudentService {
 
     public Mono<Student> createStudent(Student student) {
         student.setId(UUID.randomUUID());
+        student.setStatus("Active");
         return studentRepository.save(student);
     }
 
@@ -29,12 +30,30 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
+    public Flux<Student> getStudentsByLastName(String lastName) {
+        return studentRepository.findByLastName(lastName);
+    }
+
+    public Flux<Student> getStudentsByProgram(String program) {
+        return studentRepository.findByProgram(program);
+    }
+
+    public Flux<Student> getStudentsByStatus(String status) {
+        return studentRepository.findByStatus(status);
+    }
+
     public Mono<Student> updateStudent(UUID id, Student student) {
         return studentRepository.findById(id)
                 .flatMap(existingStudent -> {
-                    existingStudent.setEnrollmentNumber(student.getEnrollmentNumber());
+                    existingStudent.setFirstName(student.getFirstName());
+                    existingStudent.setLastName(student.getLastName());
+                    existingStudent.setEmail(student.getEmail());
+                    existingStudent.setIdentificationNumber(student.getIdentificationNumber());
+                    existingStudent.setDateOfBirth(student.getDateOfBirth());
+                    existingStudent.setAddress(student.getAddress());
+                    existingStudent.setPhoneNumber(student.getPhoneNumber());
                     existingStudent.setProgram(student.getProgram());
-                    existingStudent.setDepartment(student.getDepartment());
+                    existingStudent.setEnrollmentDate(student.getEnrollmentDate());
                     existingStudent.setStatus(student.getStatus());
                     return studentRepository.save(existingStudent);
                 });

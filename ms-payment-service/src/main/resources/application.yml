@@ -1,0 +1,17 @@
+# src/main/resources/application.yml
+server:
+  port: 8088
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_payment_service
+    username: root
+    password:
+
+  stripe:
+    api-key: your_stripe_api_key
+
+logging:
+  level:
+    root: INFO
+    com.upu.mspaymentservice: DEBUG

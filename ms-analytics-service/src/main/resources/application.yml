@@ -1,0 +1,30 @@
+
+server:
+  port: 8093
+
+spring:
+  cloud:
+    stream:
+      default-binder: kafka
+      bindings:
+        input:
+          destination: analytics-topic
+          group: analytics-group
+      kafka:
+        binder:
+          brokers: localhost:9092
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_analytics_service
+    username: root
+    password:
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ms_analytics_service
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    root: INFO
+    com.upu.msanalyticsservice: DEBUG

@@ -3,7 +3,20 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/config-serve/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-advisor-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-analytics-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-authentication-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-authorization-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-document-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-evaluation-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-payment-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-reporting-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-research-line-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-scheduler-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-search-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-student-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-thesis-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-user-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

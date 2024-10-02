@@ -8,6 +8,19 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/ms-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/ms-student-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-advisor-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-evaluation-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-thesis-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-research-line-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-document-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-authentication-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-authorization-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-scheduler-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-analytics-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-reporting-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-search-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,14 @@
+# src/main/resources/application.yml
+server:
+  port: 8086
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/ms_research_line_service
+    username: root
+    password:
+
+logging:
+  level:
+    root: INFO
+    com.upu.msresearchlineservice: DEBUG

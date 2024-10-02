@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-search-service
+  cloud:
+    config:
+      uri: http://localhost:8888
