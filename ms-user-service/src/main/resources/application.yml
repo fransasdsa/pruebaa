@@ -6,7 +6,7 @@ spring:
   r2dbc:
     url: r2dbc:mysql://localhost:3306/ms_user_service
     username: root
-    password:
+    password: ""  # No hay contraseña para la base de datos
 
 logging:
   level:
