@@ -1,8 +1,7 @@
-# src/main/resources/bootstrap.yml
 spring:
   application:
     name: ms-user-service
-  profiles:
-    active: development
+  cloud:
     config:
-      import: optional:configserver:http://root:123456@localhost:7070
+      uri: http://localhost:8888
+      fail-fast: true
