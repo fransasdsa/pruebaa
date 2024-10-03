@@ -13,8 +13,11 @@ import java.util.UUID;
 @Service
 public class StudentService {
 
-    @Autowired
-    private StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
+
+    public StudentService(StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
 
     public Mono<Student> createStudent(Student student) {
         student.setId(UUID.randomUUID());

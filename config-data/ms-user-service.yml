@@ -1,8 +1,14 @@
 # En el repositorio de configuración (e.g., C:/config-repo/ms-user-service.yml)
+server:
+  #port: 8081
+  port: ${PORT:${SERVER_PORT:0}}
+spring:
+  application:
+    name: ms-user-service
   r2dbc:
     url: r2dbc:mysql://localhost:3306/ms_user_service
     username: root
-    password:
+    password: ""
 
 logging:
   level:

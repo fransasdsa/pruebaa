@@ -45,7 +45,7 @@
       <module name="ms-research-line-service" options="" />
       <module name="ms-scheduler-service" options="-parameters" />
       <module name="ms-search-service" options="-parameters" />
-      <module name="ms-student-service" options="" />
+      <module name="ms-student-service" options="-Xlint:all" />
       <module name="ms-thesis-service" options="" />
       <module name="ms-user-service" options="" />
     </option>

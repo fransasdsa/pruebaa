@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
-            <version>3.0.6</version> <!-- Asegúrate de usar una versión consistente -->
+            <version>3.0.6</version> <!-- Usar versión consistente -->
         </dependency>
 
         <!-- Spring Data R2DBC -->
@@ -49,14 +49,14 @@
         <dependency>
             <groupId>io.r2dbc</groupId>
             <artifactId>r2dbc-pool</artifactId>
-            <version>0.9.0.RELEASE</version> <!-- Asegúrate de la versión compatible -->
+            <version>0.9.0.RELEASE</version>
         </dependency>
 
         <!-- Spring Cloud Starter OpenFeign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>4.0.3</version> <!-- Asegúrate de la versión -->
+            <version>4.0.3</version>
         </dependency>
 
         <!-- Spring Cloud Starter Config -->
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
-            <version>3.4.14</version> <!-- Cambié a una versión conocida de reactor-test -->
+            <version>3.4.14</version> <!-- Usar una versión conocida de reactor-test -->
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -123,7 +123,27 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+            </plugin>
+
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                    <compilerArgs>
+                        <arg>-Xlint:all</arg> <!-- Para habilitar los warnings de compilación -->
+                        <!-- Si quieres desactivar la opción de tratar los warnings como errores, simplemente elimina esta línea: -->
+                        <!--<arg>-Werror</arg>-->
+                    </compilerArgs>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
+
+
 </project>
