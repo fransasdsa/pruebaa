@@ -1,7 +1,6 @@
-# src/main/resources/bootstrap.yml
 spring:
   application:
     name: ms-user-service
   cloud:
     config:
-      uri: http://localhost:8888
+      import: "configserver:http://localhost:8888"
