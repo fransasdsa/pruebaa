@@ -1,7 +1,7 @@
 spring:
   application:
-    name: ms-user-service
+    name: ms-user-service  # Nombre del microservicio
   cloud:
     config:
-      uri: http://localhost:8888
-      fail-fast: true
+      uri: http://localhost:8888  # URL de tu Config Server
+      fail-fast: true  # Si la conexión falla, no debe arrancar el microservicio

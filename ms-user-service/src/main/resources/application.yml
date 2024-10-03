@@ -1,12 +1,5 @@
-# src/main/resources/application.yml
 server:
   port: 8081
-
-spring:
-  r2dbc:
-    url: r2dbc:mysql://localhost:3306/ms_user_service
-    username: root
-    password: ""
 
 logging:
   level:
