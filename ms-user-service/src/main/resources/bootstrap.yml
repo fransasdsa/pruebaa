@@ -1,7 +1,7 @@
+# src/main/resources/bootstrap.yml
 spring:
   application:
-    name: ms-user-service  # Nombre del microservicio
+    name: ms-user-service
   cloud:
     config:
-      uri: http://localhost:8888  # URL de tu Config Server
-      fail-fast: true  # Si la conexión falla, no debe arrancar el microservicio
+      uri: http://localhost:8888

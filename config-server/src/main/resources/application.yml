@@ -1,14 +1,13 @@
-# src/main/resources/application.yml
 server:
-  port: 8888
+  port: 8888  # El puerto donde se ejecuta el servidor de configuración
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/fransasdsa/pruebaa.git
-          searchPaths: config-data
+          uri: https://github.com/fransasdsa/pruebaa.git  # Repositorio Git donde están las configuraciones
+          searchPaths: config-data  # Ruta dentro del repositorio donde están los archivos de configuración
 
   profiles:
-    active: native
+    active: native  # El perfil activo es "native" para leer configuraciones locales o desde Git
